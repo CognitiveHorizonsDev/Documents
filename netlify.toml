@@ -1,47 +1,50 @@
 [build]
 
+# Build command for the site
 command = "rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true && git clone https://github.com/ppeetteerrs/obsidian-zola.git __site && __site/run.sh"
 base = ""
 publish = "public"
 
 [build.environment]
-# (Optional) Text in landing page button
-LANDING_BUTTON = "Click to steal some👆"
-# (Optional) Site description on landing page
-LANDING_DESCRIPTION = "I have nothing but intelligence."
-# (REQUIRED) The Markdown page linked to landing page button (e.g. put home for ./home.md)
+# Button text on the landing page
+LANDING_BUTTON = "Explore Cognitive Horizons"
+# Description shown on the landing page
+LANDING_DESCRIPTION = "Dive deep into the realm of knowledge and perspectives."
+# The Markdown page linked to the landing page button
 LANDING_PAGE = "home"
-# (Optional) Site title on landing page
+# Title shown on the landing page
 LANDING_TITLE = "Cognitive Horizons"
+# Python version (if required by any custom scripts)
 PYTHON_VERSION = "3.8"
-# (REQUIRED) Site repo URL
+# Repository URL for the site (unchanged)
 REPO_URL = "https://github.com/ppeetteerrs/obsidian-zola"
-# (Optional) Site title in navbar
+# Site title shown in the navbar
 SITE_TITLE = "Cognitive Horizons"
-# (Optional) Site title in browser tab (leave blank to use SITE_TITLE)
-SITE_TITLE_TAB = ""
-# (REQUIRED) Netlify site URL
+# Title shown in the browser tab (if blank, SITE_TITLE is used)
+SITE_TITLE_TAB = "Cognitive Horizons"
+# URL where the site will be hosted
 SITE_URL = "https://cognitivehorizons.netlify.app"
-# (Optional) Site Timezone
-TIMEZONE = "Asia/Hong_Kong"
+# Site timezone
+TIMEZONE = "America/New_York"
+# Zola version used for building
 ZOLA_VERSION = "0.15.2"
-# (Optional, default title) How to sort notes inside each section on the right sidebar ("date" or "title"). Subsections on side bar are sorted by title, the sort order cannot be changed.
+# Sorting method for notes on the sidebar ("date" or "title")
 SORT_BY = "title"
-# (Optional) Google Analytics Measurement ID
+# Google Analytics Measurement ID (leave blank if not using)
 GANALYTICS = ""
-# (Optional, default true) Slugify URLs. Put "" to disable.
+# Enable slugified URLs (leave blank to disable)
 SLUGIFY = "y"
-# (Optional, default true) Shows knowledge graph on home page. Put "" to disable.
+# Enable knowledge graph on the home page
 HOME_GRAPH = "y"
-# (Optional, default true) Shows knowledge graph on every page. Put "" to disable.
+# Enable knowledge graph on all pages
 PAGE_GRAPH = "y"
-# (Optional, default false) Whether sidebar sections should be collapsed by default.
+# Collapse sidebar sections by default (leave blank to disable)
 SIDEBAR_COLLAPSED = ""
-# (Optional, default blank) Additional footer content.
-FOOTER = ""
-# (Optional, default main) Root section name.
+# Additional footer content
+FOOTER = "Crafted with curiosity at Cognitive Horizons"
+# Root section name for organizing content
 ROOT_SECTION_NAME = "main"
-# (Optional) visjs graph options. Can remove if desired.
+# Options for the knowledge graph visualization (vis.js)
 GRAPH_OPTIONS = """
         {
         	nodes: {
