@@ -1,6 +1,7 @@
 [build]
+
 command = "rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true && git clone https://github.com/ppeetteerrs/obsidian-zola.git __site && __site/run.sh"
-publish = "public"
+publish = "CognitiveHorizons"
 
 [build.environment]
 # (Optional) Text in landing page button
@@ -19,7 +20,7 @@ SITE_TITLE = "Cognitive Horizons"
 # (Optional) Site title in browser tab (leave blank to use SITE_TITLE)
 SITE_TITLE_TAB = ""
 # (REQUIRED) Netlify site URL
-SITE_URL = "cognitivehorizons.netlify.app"
+SITE_URL = "https://cognitivehorizons.netlify.app"
 # (Optional) Site Timezone
 TIMEZONE = "Asia/Hong_Kong"
 ZOLA_VERSION = "0.15.2"
