@@ -17,7 +17,7 @@ LANDING_TITLE = "Cognitive Horizons"
 # Python version (if required by any custom scripts)
 PYTHON_VERSION = "3.8"
 # Repository URL for the site (unchanged)
-REPO_URL = "https://github.com/ppeetteerrs/obsidian-zola"
+REPO_URL = "https://github.com/CognitiveHorizonsDev/myobsidian-zola"
 # Site title shown in the navbar
 SITE_TITLE = "Cognitive Horizons"
 # Title shown in the browser tab (if blank, SITE_TITLE is used)
